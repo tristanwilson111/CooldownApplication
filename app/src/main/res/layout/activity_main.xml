@@ -1,26 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:components="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:layout_marginTop="15dp"
     android:background="#DADADA"
     android:orientation="vertical"
-    android:weightSum="1">
+    android:weightSum="1"
+    tools:layout_editor_absoluteY="95dp"
+    tools:layout_editor_absoluteX="0dp">
 
     <com.icaninteractive.tristan.cooldownapplication.GifView
-        android:layout_width="289dp"
-        android:layout_height="245dp"
-        android:layout_weight="0.36"
-        android:layout_gravity="center"
-        components:src="@drawable/breath" />
+        android:layout_width="219dp"
+        android:layout_height="218dp"
+        components:src="@drawable/breath"
+        tools:layout_conversion_absoluteHeight="269dp"
+        tools:layout_conversion_absoluteWidth="289dp"
+        tools:layout_conversion_absoluteX="14dp"
+        tools:layout_conversion_absoluteY="0dp"
+        android:id="@+id/gifView"
+        components:layout_constraintBottom_toBottomOf="parent"
+        components:layout_constraintTop_toTopOf="parent"
+        components:layout_constraintVertical_bias="0.343"
+        components:layout_constraintRight_toRightOf="parent"
+        components:layout_constraintLeft_toLeftOf="parent"
+        components:layout_constraintHorizontal_bias="0.504" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_weight="0.36"
         android:gravity="center"
-        android:text="Breathe In... Breathe Out..." />
-</LinearLayout>
+        android:text="Breathe In... Breathe Out..."
+        tools:layout_conversion_absoluteX="66dp"
+        tools:layout_conversion_absoluteY="269dp"
+        tools:layout_conversion_absoluteWidth="185dp"
+        tools:layout_conversion_absoluteHeight="42dp"
+        android:id="@+id/textView"
+        components:layout_constraintBottom_toBottomOf="parent"
+        components:layout_constraintTop_toTopOf="parent"
+        components:layout_constraintVertical_bias="0.881"
+        components:layout_constraintRight_toRightOf="parent"
+        components:layout_constraintLeft_toLeftOf="parent"
+        components:layout_constraintHorizontal_bias="0.57" />
+</android.support.constraint.ConstraintLayout>
